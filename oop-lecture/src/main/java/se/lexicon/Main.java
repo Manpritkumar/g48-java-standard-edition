@@ -1,45 +1,69 @@
  package se.lexicon;
 
 
-
  public class Main {
     public static void main(String[] args)
     {
-           //Instance of car
-      /* Car volvoObj = new Car();
-        volvoObj.brand= "Volvo" ;
-        volvoObj.model="V60" ;
-        volvoObj.color="blue";
-       // System.out.println(volvoObj.brand+" " + volvoObj.model+" " + volvoObj.color );
-        System.out.println(volvoObj.carinfo());
-        System.out.println("---------------");
+           //Instance of car = object
+       /* Car volvo = new Car ();
+        volvo.brand ="Volvo64";
+        volvo.model= "V50";
 
 
 
-        Car Vwobj = new Car();
-        Vwobj.brand= "Voxwagun";
-        Vwobj.color="white" ;
-        Vwobj.year= 2013 ;
-        Vwobj.model= "VW" ;
+        System.out.println("volvo.brand = " + volvo.brand );
+        System.out.println("volvo.model = " + volvo.model );
+        System.out.println("volvo.carInfo() = " + volvo.carInfo()); //this we can create the getinfor method to get the detail in one line of car.
+        
+      
+      
+        
+        
+        //Another brand car we creat
+        
+        Car maruti = new Car();
+        maruti.model="x60";
+        maruti.color="white";
+        maruti.drive(250);
 
-        System.out.println(Vwobj.carinfo());
+        
 
-        Vwobj.drive(600);
+       System.out.println("maruti.brand = " + maruti.brand);
+        System.out.println("maruti.model = " + maruti.model);
+        System.out.println("maruti.color = " + maruti.color);
 
-        System.out.println("Mileage= " + Vwobj.getMileage()); */
+        System.out.println("maruti.carInfo() = " + maruti.carInfo());
+        System.out.println("maruti.getMileage() = " + maruti.getMileage());
+        */
 
-        Car vwObj = new Car();
+        Car maruti = new Car();
+        maruti.setYear(2017);
+        maruti.setModel("VM17");
+        maruti.setColor(null);
+        maruti.setBrand("Nissan");
 
-        vwObj.setBrand ("Volkswagen");
-        vwObj.setColor (null);
-        vwObj.setYear (null);
-        vwObj.setModel("VM");
 
-        System.out.println("Color: " + vwObj.getColor());
-        System.out.println("Brand: " + vwObj.getBrand());
-        System.out.println("Year: " + vwObj.getYear());
-        System.out.println("Model: " + vwObj.getModel());
-        System.out.println("vwObj.getMileage = " + vwObj.getMileage());
+        System.out.println(maruti.getYear());
+        System.out.println(maruti.getModel());
+        System.out.println(maruti.getBrand());
+        System.out.println(maruti.getColor());
+        System.out.println(maruti.getMileage());
 
+        Person erik =new Person();
+        erik.setAge(25);
+        erik.setFirstName("Erik");
+        erik.setLastName("Svensson");
+        erik.setSsn("1989");
+
+
+        System.out.println("erik.getFirstName() = " + erik.getFirstName());
+        System.out.println("erik.getLastName() = " + erik.getLastName());
+        System.out.println("erik.getSsn() = " + erik.getSsn());
+    //------------------------------------------------------------------------
+        System.out.println("erik.getPersonInfo() = " + erik.getPersonInfo());
+
+
+
+       
     }
 }
