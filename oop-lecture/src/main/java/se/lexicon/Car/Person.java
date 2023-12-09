@@ -9,6 +9,26 @@ public class Person { //template ,Blueprint
     private int age;
     private boolean status;
 
+
+    // Constructor
+    // purpose special builder method
+  //
+    public Person ( String firstName , String lastName, String ssn,int age, boolean status) {
+        this(firstName, lastName, ssn, age);
+        this.status=status;
+
+    }
+    public Person ( String firstName , String lastName, String ssn,int age) {
+        this(firstName, lastName, ssn);
+        setAge(age);
+
+    }
+    public Person ( String firstName , String lastName, String ssn) {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setSsn(ssn);
+    }
+
     public String getFirstName() {
         return firstName;
     }

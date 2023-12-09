@@ -36,7 +36,7 @@
         System.out.println("maruti.getMileage() = " + maruti.getMileage());
         */
 
-        Car maruti = new Car();
+       /* Car maruti = new Car();
         maruti.setYear(2017);
         maruti.setModel("VM17");
         maruti.setColor(null);
@@ -47,20 +47,25 @@
         System.out.println(maruti.getModel());
         System.out.println(maruti.getBrand());
         System.out.println(maruti.getColor());
-        System.out.println(maruti.getMileage());
-
-        Person erik =new Person();
-        erik.setAge(25);
-        erik.setFirstName("Erik");
-        erik.setLastName("Svensson");
-        erik.setSsn("1989");
+        System.out.println(maruti.getMileage());*/
 
 
-        System.out.println("erik.getFirstName() = " + erik.getFirstName());
-        System.out.println("erik.getLastName() = " + erik.getLastName());
-        System.out.println("erik.getSsn() = " + erik.getSsn());
+
+            // calling the constructor
+          Person mani = new Person("mani","kumar","19892525-0457",24);
+
+
+        // erik.setAge(25);
+       // erik.setFirstName("Erik");
+       // erik.setLastName("Svensson");
+       // erik.setSsn("1989");
+
+
+       // System.out.println("erik.getFirstName() = " + erik.getFirstName());
+      //  System.out.println("erik.getLastName() = " + erik.getLastName());
+       // System.out.println("erik.getSsn() = " + erik.getSsn());
     //------------------------------------------------------------------------
-        System.out.println("erik.getPersonInfo() = " + erik.getPersonInfo());
+       System.out.println("erik.getPersonInfo() = " + mani.getPersonInfo());
 
 
 
