@@ -52,7 +52,7 @@
 
 
             // calling the constructor
-          Person mani = new Person("mani","kumar","19892525-0457",24);
+         /* Person mani = new Person("mani","kumar","19892525-0457",24);
 
 
         // erik.setAge(25);
@@ -65,10 +65,16 @@
       //  System.out.println("erik.getLastName() = " + erik.getLastName());
        // System.out.println("erik.getSsn() = " + erik.getSsn());
     //------------------------------------------------------------------------
-       System.out.println("erik.getPersonInfo() = " + mani.getPersonInfo());
+       System.out.println("erik.getPersonInfo() = " + mani.getPersonInfo());*/
 
 
+        Person erik =new Person("erik","session","19871227-0444",26,true);
+        Car volvo =new Car("Volvo","V60");
 
+        System.out.println(erik.getPersonInfo());
+        System.out.println(volvo.carInfo());
+        volvo.setOwner(erik);
+        System.out.println(volvo.carInfo());
        
     }
 }

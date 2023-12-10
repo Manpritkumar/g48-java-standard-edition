@@ -11,17 +11,42 @@ class Car { //template ,Blueprint
      private String color;
      private Integer year;
     private double mileage; // String has default value "0.0" always
+    private Person owner;
+
+    //......
+
+// constructor
+    public Car(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+    }
 
     // Methods
    public void start(){
     System.out.println("The car is Starting");
    }
-   public String carInfo(){           // carInfo method to call from main method to get all info in one line
+  /* public String carInfo(){           // carInfo method to call from main method to get all info in one line
     return "Car: brand:" + brand + " Model: " + model + " color:" + color;
-   }
+   }*/
+    public String carInfo(){
+         StringBuilder stringBuilder = new StringBuilder();
+         stringBuilder.append("Car {");
+         stringBuilder.append("Brand:").append(brand);
+        stringBuilder.append("Model:").append(model);
+        if (owner!=null){
+            stringBuilder.append("Owner Info:").append(owner.getPersonInfo());
+
+        } else {
+            stringBuilder.append("Owner Info:-");
+        }
+        stringBuilder.append("}");
+        return stringBuilder.toString();
+
+    }
    public void drive(double distance){         //Create method for calculate the mileage  and add =distance calculation.
        mileage += distance;
           }
+
    public double getMileage(){   // create method for get the mileage in the main.java
        return mileage;
           }
@@ -53,6 +78,14 @@ class Car { //template ,Blueprint
     }
     public Integer getYear(){
        return year;
+    }
+
+    public Person getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Person owner) {
+        this.owner = owner;
     }
 }
 
